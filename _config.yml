@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: 贝塔的设计图
+subtitle: 
+description: 
+author: 坦克手贝塔
+language: zh-Hans
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
+permalink_defaults: 
 
 # Directory
 source_dir: source
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: 
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -41,7 +41,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: 
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -56,6 +56,10 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+  通用: 通用
+  android: android
+  java: java
+  前端: 前端
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -72,7 +76,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next/themes/next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,3 +85,8 @@ deploy:
   message: update
   repo: 
     s1: git@104.224.169.112:hexo.git,master
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
