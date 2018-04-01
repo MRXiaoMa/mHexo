@@ -1,7 +1,7 @@
 ---
 title: 折腾utuntu的遇到的问题
 date: 2018-03-20 14:39:27
-tags:
+tags: ubuntu
 ---
 # 折腾utuntu的遇到的问题
 <!-- more -->
@@ -18,3 +18,4 @@ tags:
 1. [ubuntu17.10 上传速度慢的问题](http://blog.csdn.net/u010934417/article/details/75043166),产生的原因是域名解析耗费时长过长，在hosts文件中加入自己的ip地址，如 192.168.2.47 MC ,后面的名称可以随便写，保存之后上传就可以了
 1. idea可以在终端启动，但是创建快捷方式的时候，启动提示找不到JDK，可以参照[这个地方](https://www.zhihu.com/question/38162314?sort=created)
 1. 搜狗输入法异常（包括无法切换输入法，自动变成双拼，无显示设置图标等等），通用的解决办法是结束掉fcitx（小企鹅）线程(`killall fcitx`)，结束掉搜狗线程（`sudo killall sogou-qimpanel`），删除搜狗的配置文件（在 `~/.config/` ，以sougou开头的三个文件），然后重启fcitx `fcitx & ` ,重启搜狗输入法 `sogou-qimpanel &`，应该就可以了
+1. vim剪切板复制到系统剪切板,[参照这里](https://blog.csdn.net/un_giveup/article/details/53012331),注意 要把vim的内容复制到系统剪切板使用的时间 `"+y`命令(在非编辑模式下选中内容-输入引号-输入 `+y`),这里的+代表系统剪切板,具体的解释参照上面的连接
